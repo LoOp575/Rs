@@ -1,7 +1,9 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "functions": {
     "api/scan.py": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "excludeFiles": "{tests/**,demo_data/**,reports/**,contracts/**,data/**}"
     }
   }
 }
